@@ -1,4 +1,5 @@
 .env
+**/db.js
 # Logs
 logs
 *.log
@@ -128,4 +129,8 @@ dist
 .yarn/unplugged
 .yarn/build-state.yml
 .yarn/install-state.gz
+<<<<<<< HEAD
 .pnp.*
+=======
+.pnp.*
+>>>>>>> dc0b33531f2b29641f15b161ee23244c8486d4e3

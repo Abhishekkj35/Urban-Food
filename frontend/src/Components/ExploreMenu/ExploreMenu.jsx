@@ -17,7 +17,7 @@ useEffect(()=>{
 
   return (
     <div className='explore-menu' id="explore-menu">
-        <h1>Explore our Menu</h1>
+        <h1>Explore your Cravings</h1>
         <p className='explore-menu-text'>lorem impsuConsequat nostrud culpa amet laboris fugiat est eiusmod excepteur aliqua aliquip. Ut voluptate cillum in magna cillum sint cupidatat enim in eiusmod tempor. Quis sunt in et esse aute mollit magna ea eiusmod esse ipsum.</p>
         <div className='explore-menu-list' ref={menuRef}>
             {menu_list.map((item,index)=>{

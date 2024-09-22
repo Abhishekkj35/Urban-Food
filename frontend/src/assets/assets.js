@@ -61,7 +61,6 @@ import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
 import urban from './urbanfood.jpg'
 
-
 export const assets = {
     logo,
     basket_icon,
