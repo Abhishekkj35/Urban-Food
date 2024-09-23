@@ -81,7 +81,7 @@ export const assets = {
     logout_icon,
     bag_icon,
     parcel_icon,
-    urban
+    urban,
 }
 
 export const menu_list = [
