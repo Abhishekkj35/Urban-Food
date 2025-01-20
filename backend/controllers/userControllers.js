@@ -22,16 +22,16 @@ const loginUser=async(req,res)=>{
         //finding password match
         const isMatch = await bcrypt.compare(password,user.password);
         if(!isMatch){
-            res.json({success:false,message:"Invalid password"})
+            return res.json({ success: false, message: "Invalid password" })
         }
 
         //generating token
         const token =createToken(user._id);
-        res.json({success:true,token})
+        return res.json({ success: true, token })
 
     }catch(error){
         console.log(error)
-        res.json({success:false,message:"Error"})
+        return res.json({ success: false, message: "Error" })
     }
 }
 
