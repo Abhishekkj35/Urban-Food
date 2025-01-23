@@ -5,7 +5,7 @@ import validator from "validator"
 
 
 const createToken=(id)=>{
-    return jwt.sign({id},process.env.JWT_secret)
+    return jwt.sign({ id }, process.env.JWT_SECRET)
 }
 
 const loginUser=async(req,res)=>{
