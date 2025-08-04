@@ -11,18 +11,6 @@ import orderRouter from "./routes/orderRoute.js";
 const app=express();
 const port = process.env.PORT || 4000;
 
-//mongodb hit
-app.get("/keepalive", async (req, res) => {
-    try {
-        await Product.findOne();  // tiny DB read to keep cluster awake
-        res.send("✅ MongoDB is awake");
-    } catch (error) {
-        console.error("Keepalive DB error:", error.message);
-        res.status(500).send("❌ MongoDB not reachable");
-    }
-});
-
-
 //middleware
 app.use(express.json());
 app.use(cors());
